@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610B8C8C2217C9DF007BCDF8 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B8C8B2217C9DF007BCDF8 /* ConversionViewController.swift */; };
+		610B8C8F221803D2007BCDF8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610B8C8E221803D2007BCDF8 /* MapKit.framework */; };
+		610B8C9122188AE3007BCDF8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B8C9022188AE3007BCDF8 /* MapViewController.swift */; };
+		610B8C93221A7DFE007BCDF8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610B8C92221A7DFE007BCDF8 /* WebKit.framework */; };
+		610B8C95221A8407007BCDF8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B8C94221A8407007BCDF8 /* WebViewController.swift */; };
 		614C1875220BD58D003DA5D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C1874220BD58D003DA5D1 /* AppDelegate.swift */; };
-		614C1877220BD58D003DA5D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C1876220BD58D003DA5D1 /* ViewController.swift */; };
 		614C187A220BD58D003DA5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614C1878220BD58D003DA5D1 /* Main.storyboard */; };
 		614C187C220BD58F003DA5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614C187B220BD58F003DA5D1 /* Assets.xcassets */; };
 		614C187F220BD58F003DA5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614C187D220BD58F003DA5D1 /* LaunchScreen.storyboard */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		610B8C8B2217C9DF007BCDF8 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		610B8C8E221803D2007BCDF8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		610B8C9022188AE3007BCDF8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		610B8C92221A7DFE007BCDF8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		610B8C94221A8407007BCDF8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		614C1871220BD58D003DA5D1 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614C1874220BD58D003DA5D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		614C1876220BD58D003DA5D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		614C1879220BD58D003DA5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		614C187B220BD58F003DA5D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		614C187E220BD58F003DA5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610B8C93221A7DFE007BCDF8 /* WebKit.framework in Frameworks */,
+				610B8C8F221803D2007BCDF8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		610B8C8D221803D2007BCDF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				610B8C92221A7DFE007BCDF8 /* WebKit.framework */,
+				610B8C8E221803D2007BCDF8 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		614C1868220BD58D003DA5D1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,7 @@
 				614C1888220BD58F003DA5D1 /* WorldTrotterTests */,
 				614C1893220BD58F003DA5D1 /* WorldTrotterUITests */,
 				614C1872220BD58D003DA5D1 /* Products */,
+				610B8C8D221803D2007BCDF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +117,11 @@
 		614C1873220BD58D003DA5D1 /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				610B8C8B2217C9DF007BCDF8 /* ConversionViewController.swift */,
 				614C1874220BD58D003DA5D1 /* AppDelegate.swift */,
-				614C1876220BD58D003DA5D1 /* ViewController.swift */,
 				614C1878220BD58D003DA5D1 /* Main.storyboard */,
+				610B8C94221A8407007BCDF8 /* WebViewController.swift */,
+				610B8C9022188AE3007BCDF8 /* MapViewController.swift */,
 				614C187B220BD58F003DA5D1 /* Assets.xcassets */,
 				614C187D220BD58F003DA5D1 /* LaunchScreen.storyboard */,
 				614C1880220BD58F003DA5D1 /* Info.plist */,
@@ -256,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				614C1877220BD58D003DA5D1 /* ViewController.swift in Sources */,
+				610B8C8C2217C9DF007BCDF8 /* ConversionViewController.swift in Sources */,
+				610B8C9122188AE3007BCDF8 /* MapViewController.swift in Sources */,
 				614C1875220BD58D003DA5D1 /* AppDelegate.swift in Sources */,
+				610B8C95221A8407007BCDF8 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MT5P2J63B;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bignerdranch.WorldTrotter;
+				PRODUCT_BUNDLE_IDENTIFIER = "kashyap1993-icloud.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,12 +475,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MT5P2J63B;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bignerdranch.WorldTrotter;
+				PRODUCT_BUNDLE_IDENTIFIER = "kashyap1993-icloud.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
